@@ -1,0 +1,11 @@
+def taxiFare():
+    dist = input("How long is the journey?")
+    fare = 0
+    if dist <= 10:
+        fare = 15*dist
+    elif dist <= 100:
+        fare = 150 + (dist - 10)*8
+            
+    elif dist > 100:
+        fare = 150 + 720 + (dist - 100)*6
+    print(fare)
